@@ -351,8 +351,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 
 
-![[ssh to ec2 done.jpg]]
 
+![ssh to ec2 done](https://github.com/user-attachments/assets/2b90c055-4916-481e-85ba-9b19aa98b378)
 
 Since, our AMI instance doesn't have `MySQL` pre-installed, run the following commands sequentially to install it:
 
@@ -375,7 +375,9 @@ mysql -h <DB_endpoint> -P 3306 -u admin -p
 Replace the `<DB_endpoint>` with the endpoint of your database instance that was created.
 
 When prompted for password, enter `db*pass123` - the password you created via terraform.
-![[connected to db.jpg]]
+
+![connected to db](https://github.com/user-attachments/assets/5fa92dcf-8c79-47ba-a3c9-f714fbc9ef97)
+
 
 ### Testing my RDS
 
@@ -389,7 +391,8 @@ SHOW DATABASES;
 
 You should see a list of databases, one of them being `appdatabase` - the one we created via terraform.
 
-![[DB working.jpg]]
+![DB working](https://github.com/user-attachments/assets/93f9226e-a848-4c1a-a060-9574848de56f)
+
 
 This demonstrates that our RDS database is working as a shared database instance - accessible from both the web servers.
 
